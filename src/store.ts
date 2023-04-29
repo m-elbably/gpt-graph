@@ -31,10 +31,5 @@ export default reactive({
     },
     splashView: true,
     settingsView: false,
-    setApiKey(key: string) {
-        this.apiKey = key;
-    },
-    getApiKey() {
-        return this.apiKey;
-    }
+    githubUrl: 'https://github.com/m-elbably/gpt-graph'
 })

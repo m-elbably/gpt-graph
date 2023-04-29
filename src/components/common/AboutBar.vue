@@ -1,6 +1,20 @@
 <script setup lang="ts">
 import { GithubOutlined, InfoCircleOutlined } from '@ant-design/icons-vue';
-import 'ant-design-vue/es/button/style/css';
+import store from "../../store";
+import {Modal} from "ant-design-vue";
+
+function openGithubRepository() {
+    window.open(store.githubUrl, '_blank');
+}
+
+function openAboutDialog() {
+    Modal.info({
+        title: 'GPT Graph',
+        content: 'This tool is made just for demonstration purpose of the idea of using graph structure with GPT 3.5 and for how to use LLMs in general, it has very limited functionalities and not tested.',
+        centered: true,
+        maskClosable: true
+    });
+}
 
 </script>
 
@@ -9,7 +23,7 @@ import 'ant-design-vue/es/button/style/css';
         <a-col>
             <a-row>
                 <a-tooltip color="blue" placement="left">
-                    <a-button>
+                    <a-button @click="openGithubRepository()">
                         <template #icon><GithubOutlined /></template>
                     </a-button>
                     <template #title>Github Repository</template>
@@ -17,7 +31,7 @@ import 'ant-design-vue/es/button/style/css';
             </a-row>
             <a-row>
                 <a-tooltip color="blue" placement="left">
-                    <a-button>
+                    <a-button @click="openAboutDialog()">
                         <template #icon><InfoCircleOutlined /></template>
                     </a-button>
                     <template #title>About</template>

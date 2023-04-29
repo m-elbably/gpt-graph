@@ -278,65 +278,6 @@ function addNodes(node: Item, data: {[k: string]: any}, overwriteParent = false)
     }
 }
 
-// function addNodes(node: any, data: any, overwriteParent = false) {
-//     const {value: graph} = _graph;
-//     let nextId = graph.getNodes().length === 1 ? 0 : graph.getNodes().length;
-//     let parentId = node.getModel().id;
-//
-//     const visited = new Set<Item>();
-//     const stack = [data];
-//
-//     while (stack.length > 0) {
-//         const currentNode = stack.pop();
-//
-//         if (!visited.has(currentNode)) {
-//             visited.add(currentNode);
-//
-//             if(currentNode.parentId) {
-//                 parentId = currentNode.parentId;
-//             }
-//
-//             if(nextId === 0) {
-//                 const {title, description, url, prompts} = currentNode;
-//                 graph.updateItem(node,{
-//                     id: '0',
-//                     title,
-//                     description,
-//                     url,
-//                     prompts,
-//                     visible: true,
-//                     loading: false
-//                 });
-//                 nextId++;
-//             } else {
-//                 currentNode['id'] = String(nextId++);
-//                 currentNode['visible'] = true;
-//                 currentNode['loading'] = false;
-//                 if (!currentNode.prompts) {
-//                     currentNode['prompts'] = [];
-//                 }
-//
-//                 graph.addItem('node', currentNode);
-//                 graph.addItem('edge', {
-//                     source: parentId,
-//                     target: currentNode.id
-//                 });
-//             }
-//
-//             currentNode.children.forEach((child: any) => {
-//                 if (!visited.has(child)) {
-//                     child.parentId = parentId;
-//                     stack.push(child);
-//                 }
-//             });
-//
-//             delete currentNode.children;
-//         }
-//     }
-//
-//     graph.layout();
-// }
-
 async function fetchPrompt(parent: Item, prompt: string) {
     const {value: graph} = _graph;
 
