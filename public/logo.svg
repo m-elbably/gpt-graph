@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="250" y1="227.343" x2="250" y2="306.658" id="gradient-0" gradientTransform="matrix(0.74289, 0.669414, -0.655998, 0.728001, 255.258018, -83.942795)">
+      <stop offset="0" style="stop-color: rgb(3, 166, 235);"/>
+      <stop offset="1" style="stop-color: rgb(28, 140, 210);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="310.914" y1="156.515" x2="310.914" y2="188.875" id="gradient-2" gradientTransform="matrix(1, 0, 0, 1, -10.786802, 15.862944)">
+      <stop offset="0" style="stop-color: rgb(0, 128, 255);"/>
+      <stop offset="1" style="stop-color: rgb(28, 140, 210);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="310.914" y1="156.515" x2="310.914" y2="188.875" id="gradient-1" gradientTransform="matrix(1, 0, 0, 1, -127.269318, -1.952203)">
+      <stop offset="0" style="stop-color: rgb(0, 128, 255);"/>
+      <stop offset="1" style="stop-color: rgb(28, 140, 210);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="310.914" y1="156.515" x2="310.914" y2="188.875" id="gradient-3" gradientTransform="matrix(-0.999096, -0.042515, 0.039216, -0.921593, 569.358032, 275.856659)">
+      <stop offset="0" style="stop-color: rgb(28, 140, 210);"/>
+      <stop offset="1" style="stop-color: rgb(0, 128, 255);"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="241.117" y1="119.712" x2="241.117" y2="183.164" id="gradient-4" gradientTransform="matrix(1.001892, 0, 0, 1, -0.372069, 0)">
+      <stop offset="0" style="stop-color: rgb(66, 158, 216);"/>
+      <stop offset="1" style="stop-color: rgb(28, 140, 210);"/>
+    </linearGradient>
+  </defs>
+  <text style="fill: url(#gradient-0); font-family: Ouhod; font-size: 50px; font-weight: 700; paint-order: stroke; white-space: pre;" x="101.478" y="285.084">GPT GRAPH</text>
+  <g transform="matrix(1, 0, 0, 1, 8.113991, 0)">
+    <path style="fill: none; stroke: url(#gradient-4); stroke-width: 6px; stroke-linecap: round; stroke-linejoin: round;" d="M 264.716 103.849 L 184.645 169.839 L 299.661 188.874 L 264.716 103.849 Z"/>
+    <ellipse style="fill: url(#gradient-2);" cx="300.127" cy="188.558" rx="15.863" ry="16.18"/>
+    <ellipse style="fill: url(#gradient-1);" cx="183.645" cy="170.742" rx="15.863" ry="16.18"/>
+    <ellipse style="fill: url(#gradient-3);" cx="264.863" cy="102.215" rx="15.863" ry="16.18"/>
+  </g>
+</svg>

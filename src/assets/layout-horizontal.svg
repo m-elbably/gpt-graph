@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg class="ionicon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="128" cy="96" r="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" transform="matrix(0, 1, -1, 0, 512, 0)"/>
+  <circle cx="256" cy="416" r="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" transform="matrix(0, 1, -1, 0, 512, 0)"/>
+  <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M 200 200 L 200 312" transform="matrix(0, 1, -1, 0, 456, 56)"/>
+  <circle cx="384" cy="96" r="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" transform="matrix(0, 1, -1, 0, 512, 0)"/>
+  <path d="M 184 200 C 184 274.67 252.92 312 312 312 M 440 200 C 440 274.67 371.08 312 312 312" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" transform="matrix(0, 1, -1, 0, 568, -56)"/>
+</svg>
