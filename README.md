@@ -21,6 +21,9 @@
 ## Online Demo
 Checkout the online demo [Here](https://m-elbably.github.io/gpt-graph/)
 
+## Video
+https://user-images.githubusercontent.com/2601749/235351969-b6a309e5-a1f0-4be5-9a71-c4547b41dc32.mp4
+
 ## Usage
 - `npm install`
 - `npm run dev`
