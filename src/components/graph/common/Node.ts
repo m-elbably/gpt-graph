@@ -152,7 +152,7 @@ export default class Node {
                 y: (h - LOADER_HEIGHT) / 2 + Header_Height / 2,
                 height: LOADER_HEIGHT,
                 width: LOADER_WIDTH,
-                img: './src/assets/fetching.svg',
+                img: './public/fetching.svg',
                 opacity: 0.0
             },
         });
@@ -164,7 +164,7 @@ export default class Node {
                 y: h - 28,
                 height: 24,
                 width: 24,
-                img: './src/assets/open-outline.svg',
+                img: './public/open-outline.svg',
                 cursor: 'pointer',
                 opacity: 0.4
             },
@@ -177,7 +177,7 @@ export default class Node {
                 y: h - 28,
                 height: 24,
                 width: 24,
-                img: './src/assets/telescope-outline.svg',
+                img: './public/telescope-outline.svg',
                 cursor: 'pointer',
                 opacity: 0.4
             },

@@ -53,7 +53,7 @@ function getApiKeyState() {
 
 <template>
     <div class="initial-view">
-        <a-empty image="./src/assets/empty.svg" :image-style="{ height: '150px' }" >
+        <a-empty image="./public/empty.svg" :image-style="{ height: '150px' }" >
             <template #description>
                 <a-typography-text class="typography-comment" type="secondary">
                     Discover new ideas
