@@ -18,6 +18,9 @@
 - Custom prompts to ask questions and get answers, also with generated prompts to branch from your own ideas
 - Markdown formatted descriptions
 
+## Online Demo
+Checkout the online demo [Here](https://m-elbably.github.io/gpt-graph/)
+
 ## Usage
 - `npm install`
 - `npm run dev`
