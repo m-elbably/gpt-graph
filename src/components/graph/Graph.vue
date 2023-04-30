@@ -349,8 +349,8 @@ function attachGraphListeners() {
     graph.on('node:dblclick', (e: G6GraphEvent) => {
         const model = e.item.getModel();
 
-        detailsDialog.value.title = model.title;
-        detailsDialog.value.description = model.description;
+        detailsDialog.value.title = model.title as string;
+        detailsDialog.value.description = model.description as string;
         detailsDialog.value.visible = true;
     });
 }

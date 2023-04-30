@@ -77,7 +77,7 @@ function onPromptSelectionChanged(e: Event) {
             <a-button key="save" type="primary" @click="onSubmit()">Explore</a-button>
         </template>
         <a-form ref="form" :model="formState" layout="vertical" :rules="formState.rules">
-            <a-form-item label="Suggested Prompts" name="builtin-prompt" v-if="prompts?.length > -1">
+            <a-form-item label="Suggested Prompts" name="builtin-prompt" v-if="prompts && prompts?.length > -1">
                 <a-radio-group
                     :value="selectedPrompt"
                     @change="onPromptSelectionChanged($event)"

@@ -2,7 +2,7 @@ import {reactive} from 'vue'
 
 export default reactive({
     api: 'https://api.openai.com/v1/chat/completions',
-    apiKey: import.meta.env.VITE_OPENAI_KEY || '',
+    apiKey: import.meta.env.DEV ? import.meta.env.VITE_OPENAI_KEY || '' : '',
     initialPrompt: '',
     minNodes: 1,
     generatePrompt(userPrompt: string): string {
@@ -22,7 +22,7 @@ export default reactive({
             - Prompt example "Given a+b=120, Solve for b" the prompts can be ("Linear Algebra", "Linear Equations in Algebra") \n
             - Prompts will be a standalone questions, so make it fully qualified \n
             - You may answer questions directly in the description with clear steps \n
-            - Provide description in markdown format if possible \n
+            - Format the description in markdown \n
             ${additionalInstructions.length > 0 ? additionalInstructions.join('\n') : ''}
             Query: [${userPrompt}]
         `.trim().replace(/\s+/g, ' ');

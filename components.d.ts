@@ -9,17 +9,13 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    About: typeof import('./src/components/About.vue')['default']
     AboutBar: typeof import('./src/components/common/AboutBar.vue')['default']
     AButton: typeof import('ant-design-vue/es')['Button']
     ACol: typeof import('ant-design-vue/es')['Col']
-    ADropdown: typeof import('ant-design-vue/es')['Dropdown']
     AEmpty: typeof import('ant-design-vue/es')['Empty']
     AForm: typeof import('ant-design-vue/es')['Form']
     AFormItem: typeof import('ant-design-vue/es')['FormItem']
     AInput: typeof import('ant-design-vue/es')['Input']
-    AMenu: typeof import('ant-design-vue/es')['Menu']
-    AMenuItem: typeof import('ant-design-vue/es')['MenuItem']
     AModal: typeof import('ant-design-vue/es')['Modal']
     ARadioButton: typeof import('ant-design-vue/es')['RadioButton']
     ARadioGroup: typeof import('ant-design-vue/es')['RadioGroup']
@@ -32,11 +28,8 @@ declare module '@vue/runtime-core' {
     DescoverDialog: typeof import('./src/components/graph/DescoverDialog.vue')['default']
     DetailsDialog: typeof import('./src/components/graph/DetailsDialog.vue')['default']
     Graph: typeof import('./src/components/graph/Graph.vue')['default']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Home: typeof import('./src/components/Home.vue')['default']
-    Initial: typeof import('./src/components/Initial.vue')['default']
     Settings: typeof import('./src/components/common/Settings.vue')['default']
-    Splash: typeof import('./src/components/Splash.vue')['default']
     Toolbar: typeof import('./src/components/common/Toolbar.vue')['default']
   }
 }

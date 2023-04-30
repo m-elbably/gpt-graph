@@ -22,23 +22,13 @@ const placeholder = ref(
 )
 
 // Settings
-const showNewGraphDialog = () => {
-    if(!store.apiKey || store.apiKey.length === 0){
-        Modal.error({
-            title: 'API Key',
-            content: 'You need OpenAI API key to processed, Close this dialog to add your key.',
-            centered: true,
-            afterClose: () => store.settingsView = true
-        });
-        return;
-    }
-
+async function showNewGraphDialog () {
     formState.value.minNodes = store.minNodes;
     newGraphVisible.value = true;
-    nextTick(() =>  formPromptField.value?.focus());
-};
+    await nextTick(() =>  formPromptField.value?.focus());
+}
 
-const newGraphDialogSave = async () => {
+async function newGraphDialogSave () {
     try {
         await form.value.validate();
         newGraphVisible.value = false;
@@ -49,7 +39,15 @@ const newGraphDialogSave = async () => {
     } catch (e) {
        console.log(e);
     }
-};
+}
+
+function showSettingsDialog() {
+    store.settingsView = true
+}
+
+function getApiKeyState() {
+    return store.apiKey && store.apiKey.length > 0;
+}
 
 </script>
 
@@ -61,7 +59,8 @@ const newGraphDialogSave = async () => {
                     Discover new ideas
                 </a-typography-text>
             </template>
-            <a-button type="primary" @click="showNewGraphDialog">Create New Graph</a-button>
+            <a-button type="primary" @click="showNewGraphDialog" v-if="getApiKeyState()">Create New Graph</a-button>
+            <a-button type="primary" @click="showSettingsDialog" v-if="!getApiKeyState()">Set Your API Key</a-button>
         </a-empty>
         <a-modal :centered="true"  v-model:visible="newGraphVisible" title="New Graph" @ok="newGraphDialogSave">
             <a-form
@@ -79,9 +78,6 @@ const newGraphDialogSave = async () => {
                         v-model:value="formState.prompt"
                         :auto-size="{ minRows: 5, maxRows: 8 }"
                     />
-<!--                    <a-typography-text class="typography-comment" type="secondary">-->
-<!--                        Ant Design Vue (secondary)-->
-<!--                    </a-typography-text>-->
                 </a-form-item>
                 <a-form-item label="Minimum Nodes">
                     <a-slider v-model:value="formState.minNodes" :min="1" :max="10"/>
