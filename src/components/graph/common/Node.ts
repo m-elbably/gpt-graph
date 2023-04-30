@@ -1,4 +1,7 @@
 import {NodeConfig, IGroup, Item, Marker, Util, Shape} from '@antv/g6';
+import progressImage from '../../../assets/fetching.svg';
+import openLinkImage from '../../../assets/open-outline.svg';
+import discoverImage from '../../../assets/telescope-outline.svg';
 
 const COLOR = '#6d9cfd';
 const DARK_COLOR = '#9fbeff';
@@ -152,7 +155,7 @@ export default class Node {
                 y: (h - LOADER_HEIGHT) / 2 + Header_Height / 2,
                 height: LOADER_HEIGHT,
                 width: LOADER_WIDTH,
-                img: './public/fetching.svg',
+                img: `${progressImage}`,
                 opacity: 0.0
             },
         });
@@ -164,7 +167,7 @@ export default class Node {
                 y: h - 28,
                 height: 24,
                 width: 24,
-                img: './public/open-outline.svg',
+                img: `${openLinkImage}`,
                 cursor: 'pointer',
                 opacity: 0.4
             },
@@ -177,7 +180,7 @@ export default class Node {
                 y: h - 28,
                 height: 24,
                 width: 24,
-                img: './public/telescope-outline.svg',
+                img: `${discoverImage}`,
                 cursor: 'pointer',
                 opacity: 0.4
             },

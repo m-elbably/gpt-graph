@@ -2,8 +2,8 @@
 import {ref, nextTick} from 'vue';
 import store from '../store';
 import events from '../events';
-import { Modal } from 'ant-design-vue';
-import 'ant-design-vue/es/button/style/css';
+import emptyImage from '../assets/empty.svg';
+
 interface FormState {
     prompt: string;
     minNodes: number;
@@ -53,7 +53,7 @@ function getApiKeyState() {
 
 <template>
     <div class="initial-view">
-        <a-empty image="./public/empty.svg" :image-style="{ height: '150px' }" >
+        <a-empty :image="emptyImage" :image-style="{ height: '150px' }" >
             <template #description>
                 <a-typography-text class="typography-comment" type="secondary">
                     Discover new ideas
