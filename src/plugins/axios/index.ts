@@ -28,7 +28,7 @@ export default class Api {
         const response = await axios.post(
             `${API}`,
             {
-                "model": "gpt-3.5-turbo",
+                "model": "chatgpt-4o-latest",
                 "messages": [{role: "user", content: prompt}],
                 "temperature": 0.7,
                 "max_tokens": 2048,
